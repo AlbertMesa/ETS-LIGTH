@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS LIGHT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <p class="txt_1">Etsi Light Monitoring System</p>
+            <h2>Welcome ETS</h2>
+            <hr>
+            <p class="txt_2">Innovación que Fluye: Regulación del Tráfico con Tecnología de Vanguardia.</p>
+        </div>
+
+        <form class="form" id="formulario">
+            <h2>Login</h2>
+            <p>Ingrese los datos de acceso:</p>
+            <div class="inputs">
+                <input type="text" class="box" placeholder="Ingrese su usuario" id="usuario">
+                <input type="password" class="box" placeholder="Ingrese su clave" id="clave">
+                <a href="{{url_for('index')}}"></a>
+                <input type="button" value="Go" class="submit" onclick="loguer()">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
